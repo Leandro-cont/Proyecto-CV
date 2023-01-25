@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+}
+@media screen and (max-width: 700px){
+    nav, .row-1{
+        flex-direction: column;
+    }
+}
+    
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding: 0;
+}
+.row-1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.img-perfil{
+    flex: 40%;
+    height: 200px;
+}
+
+header{
+    flex: 60%;
+    padding: 50px;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+
+}
+nav a {
+    text-align: center;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+
+}
+
+.row-2{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex:30px;
+    background-color: beige;
+    padding: 20px;
+}
+
+section{
+    flex: 70%;
+    background-color: khaki;
+    padding: 20px;
+}
+footer{
+    padding: 15px;
+    text-align: center;
+    background-color: rgb(77, 77, 83);
+}
+#habilidades {
+    background-color: white;
+    width: 100%; 
+    height: auto;
+}
+
+.listas-paralelas {
+    display: flex;
+    align-content: center;
+    margin: 0px auto;
+}
+
+ul>li.habilidades-destacadas {
+    list-style-type: none;
+}
+
+#barra-progreso1 {
+    background: black;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+}
+
+#barra-progreso1:after {
+    content: '';
+    display: block;
+    background: red;
+    width: 55%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#barra-progreso2 {
+    background: black;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+}
+
+#barra-progreso2:after {
+    content: '';
+    display: block;
+    background: red;
+    width: 55%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#barra-progreso3 {
+    background: black;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+}
+
+#barra-progreso3:after {
+    content: '';
+    display: block;
+    background: red;
+    width: 60%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#barra-progreso4 {
+    background: black;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+}
+
+#barra-progreso4:after {
+    content: '';
+    display: block;
+    background: red;
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#barra-progreso5 {
+    background: black;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+}
+
+#barra-progreso5:after {
+    content: '';
+    display: block;
+    background: red;
+    width: 60%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#barra-progreso6 {
+    background: black;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+}
+
+#barra-progreso6:after {
+    content: '';
+    display: block;
+    background: red;
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+button {
+    float:inline-start; 
+    margin-left: 10px;
+    padding: 2px 1px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid black;
+    color: white;
+}
+
+#info-extra {
+    display: none;
+}
+article{
+    background-color: lightgreen;
+}
+
+.boton{
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+.datos a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 13px;
+}
+
+.datos{
+    background-color:#333;
+    width: 300px;
+    display: none;
+}
+
+.datos a:hover{
+    background-color: rgb(92, 91, 91);
+}
+
+.desplegable:hover .datos{
+    display: block;
+}
+
+.desplegable{
+    position: absolute;
+}
