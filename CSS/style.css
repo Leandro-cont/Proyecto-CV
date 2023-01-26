@@ -18,14 +18,15 @@ body{
     flex-wrap: wrap;
 }
 .img-perfil{
-    flex: 40%;
-    height: 200px;
+    flex: 45%;
+    height: 223px;
+    background-color: rgb(238, 240, 239);
 }
 
 header{
     flex: 60%;
     padding: 50px;
-    background-color: aquamarine;
+    background-color: rgb(238, 240, 239);
     text-align: center;
 }
 
@@ -59,14 +60,18 @@ section{
     padding: 20px;
 }
 footer{
-    padding: 15px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-right: 15px ;
     text-align: center;
     background-color: rgb(77, 77, 83);
 }
 #habilidades {
-    background-color: white;
+    background-color: rgb(146, 240, 167);
     width: 100%; 
     height: auto;
+    padding: 15px 0px 15px 0px;
 }
 
 .listas-paralelas {
@@ -194,8 +199,14 @@ button {
 #info-extra {
     display: none;
 }
-article{
-    background-color: lightgreen;
+#experiencia {
+    background-color: rgb(146, 240, 167);
+    
+}
+
+.Exp{
+    margin-top: 0px;
+    padding-top: 19px;
 }
 
 .boton{
@@ -210,6 +221,10 @@ article{
     font-size: 16px;
     cursor: pointer;
     
+}
+
+#ubicacion{
+    justify-content: flex-end
 }
 
 .datos a{
