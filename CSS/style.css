@@ -20,13 +20,13 @@ body{
 .img-perfil{
     flex: 45%;
     height: 223px;
-    background-color: rgb(238, 240, 239);
+    background-color:  rgba(165, 161, 161, 0.349);
 }
 
 header{
     flex: 60%;
     padding: 50px;
-    background-color: rgb(238, 240, 239);
+    background-color: rgba(46, 122, 236, 0.349);
     text-align: center;
 }
 
@@ -50,28 +50,41 @@ nav a {
 }
 aside{
     flex:30px;
-    background-color: beige;
+    background-color: rgba(0, 162, 255, 0.267);
     padding: 20px;
 }
 
 section{
     flex: 70%;
-    background-color: khaki;
+    background-color: rgba(0, 247, 247, 0.37);
     padding: 20px;
 }
 footer{
     padding-top: 5px;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-bottom: 5px;
-    padding-right: 15px ;
+    padding-right: 0px ;
+    height: 90px;
     text-align: center;
-    background-color: rgb(77, 77, 83);
+    background-color: rgb(34, 33, 33);
 }
+
+h6{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    color: white;
+}
+
 #habilidades {
-    background-color: rgb(146, 240, 167);
+    background-color: rgba(117, 255, 158, 0.836);
     width: 100%; 
     height: auto;
-    padding: 15px 0px 15px 0px;
+    padding: 15px 20px 15px 20px;
+}
+
+.informacion{
+    padding-left: 20px;
 }
 
 .listas-paralelas {
@@ -194,19 +207,21 @@ button {
     border-radius: 10px;
     border: 2px solid black;
     color: white;
+    cursor: pointer;
 }
 
 #info-extra {
     display: none;
 }
 #experiencia {
-    background-color: rgb(146, 240, 167);
+    background-color:  rgba(117, 255, 158, 0.836);
     
 }
 
 .Exp{
     margin-top: 0px;
     padding-top: 19px;
+    padding-left: 20px;
 }
 
 .boton{
@@ -215,16 +230,11 @@ button {
     border: none;
     padding: 14px 20px;
     justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     text-decoration: none;
     font-size: 16px;
     cursor: pointer;
     
-}
-
-#ubicacion{
-    justify-content: flex-end
 }
 
 .datos a{
@@ -238,10 +248,16 @@ button {
     background-color:#333;
     width: 300px;
     display: none;
+    position:absolute;
+    z-index: 1;
 }
 
-.datos a:hover{
+.boton a:hover, boton:hover{
     background-color: rgb(92, 91, 91);
+}
+
+.show{
+    display: block;
 }
 
 .desplegable:hover .datos{
@@ -249,5 +265,5 @@ button {
 }
 
 .desplegable{
-    position: absolute;
+    align-items: flex-end;
 }
