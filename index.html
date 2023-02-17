@@ -1,52 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/61b043c277.js" crossorigin="anonymous"></script>
     <title>Proyecto-CV</title>
 </head>
 <body>
+     <nav>
+            
+        <a href="#SobreMi">Sobre Mi</a>
+        <a href="#Educacion">Educacion</a>
+        <a href="#Experiencia">Experiencia</a>
+        <a href="#Habilidades">Habilidades</a>
+
+        <div id="ubicacion" class="desplegable">
+                <button onclick="myFunction()" class="boton">Contacto</button>
+                <div id="myDropdown" class="datos">
+                    <a>Tel: 2284-645291</a>
+                    <a>E-mail: leandro_cont_95@hotmail.com</a>
+                    <a>Localidad: Olavarria, Buenos Aires</a>
+                    <a>Direccion: Mitre 2525</a>                    
+                </div>
+            </div>
+
+    </nav>
     <div class="row-1">
         <div>
             <img class = "img-perfil" src=https://randomuser.me/api/portraits/men/71.jpg alt="Imagen del solicitante"/>
         </div>
         <header>
-            <h1>Mi Pagina Web</h1>
+            <h1>Curriculum Vitae: Leandro Contreras </h1>
+
         </header>
 
     </div>
-    <nav>
-        <a href="#">Sobre Mi</a>
-        <a href="#">Educacion</a>
-        <a href="#">Experiencia</a>
-        <a href="#">Contacto</a>
-    </nav>
+   
     <div class="row-2">
         <aside>
-            <h2>
-                Aside
+            <h2 id="SobreMi">
+                Sobre Mi
             </h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore error, aperiam, itaque fugiat ipsa sit recusandae nobis provident ex voluptates, commodi nihil necessitatibus earum officiis soluta atque eligendi fugit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec massa arcu, fermentum eget est a, consequat volutpat neque.
+                Donec ac orci urna.
+            </p>
+            <p>
+                Etiam maximus faucibus elementum. Nam eget ante auctor magna imperdiet tristique a nec orci. Vestibulum ornare lectus nisi, a molestie sem congue quis.    
             </p>
         </aside>
 
         <section>
-            <h2>
-                Section
+            <h2 id="Educacion">
+                Educacion
             </h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates vel aspernatur dolor molestiae ex, quibusdam cupiditate laudantium nesciunt quasi veniam velit, et animi rem quidem fuga. Nulla, totam laudantium.
+                Morbi eget felis metus. Etiam dignissim, est maximus egestas rhoncus, felis est pharetra dolor, a ultricies ligula leo ac quam. Quisque quis mattis turpis. Nunc nunc tortor, condimentum vitae accumsan vitae, dignissim eu ipsum. 
+                Sed eu fringilla lectus, vitae imperdiet urna. Nullam ac nisi enim. Vestibulum ligula mi, pulvinar at tellus at, efficitur mattis felis. Praesent quis urna faucibus, mollis nisl et, iaculis nisi. 
+                Proin nec justo nec neque ullamcorper feugiat ac sed mi. Nam condimentum sodales purus, ultrices aliquam mi varius sed. Nullam ac placerat neque. Suspendisse in dolor quis tortor pharetra vehicula. 
+                Suspendisse vitae accumsan erat, vitae feugiat orci.
+            </p>
+            <p>    
+                Vestibulum convallis, leo sagittis porttitor tincidunt, mi mi bibendum lorem, vitae lacinia arcu est non est. 
+                Cras volutpat, metus ut gravida ultricies, odio massa elementum risus, non rutrum lectus leo nec erat.
+                Aliquam lectus arcu, dictum vitae risus id, semper hendrerit ligula. Etiam sed blandit nibh. Etiam enim est, tristique vel volutpat vel, tincidunt aliquam diam. 
+                Suspendisse at pellentesque nulla, quis mollis ipsum. Suspendisse et velit id erat fringilla vestibulum sed vel nibh. Suspendisse vitae felis ac odio pharetra cursus eu efficitur libero. Integer luctus aliquam lectus.
+            </p>
+            <button id="mas-info" onclick="moreInfo()"> Mas Info</button>
+            <p id="info-extra">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum congue auctor tincidunt. In vel tempor risus. Aliquam sodales interdum vestibulum. Suspendisse auctor dolor tincidunt metus semper vehicula.
+                 Suspendisse potenti. Nulla vulputate sem nec mattis congue. Phasellus ut lobortis ligula. Aliquam venenatis neque vel pretium porttitor. Interdum et malesuada fames ac.
             </p>
         </section>
     </div>
+    <article id="experiencia">
+            <h2 class="Exp" id="Experiencia">Experiencia</h2>
+        <p class="informacion"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat, erat ut varius aliquet, magna mauris eleifend tellus, eget scelerisque neque tortor et mi.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque vulputate sapien a est elementum, vel fermentum lectus fringilla.
+            Etiam gravida, ex eget fermentum ullamcorper, lacus metus vulputate leo, nec dictum risus odio sit amet ante. Praesent fringilla dignissim massa. 
+            Donec lobortis enim eu egestas faucibus. Integer commodo dolor eget elit rhoncus dignissim. Nulla bibendum varius ipsum ut blandit. Fusce tempor dictum lorem non vehicula.
+        </p>
+        <p class="informacion">
+            Etiam rhoncus, orci eu bibendum dignissim, tellus metus lobortis ligula, nec tincidunt odio justo ut lectus. Aenean non vehicula massa. 
+            Curabitur ipsum nisl, tempus quis vestibulum quis, porttitor sed risus. Nullam non arcu in augue tempus mollis. Mauris dolor erat, bibendum vel elit sed, viverra tempor diam. 
+            Morbi eu placerat nibh, vel malesuada erat. Aliquam odio odio, ullamcorper eu est vitae, gravida facilisis sem. Duis venenatis enim felis, et molestie neque fringilla ac.
+        </p>
+        
+        
+        <section id="habilidades">
+            <h2 id="Habilidades" class="subtitulos">Habilidades</h2>
+            <div class="listas-paralelas">
+                <ul>
+                    <li class="habilidades-destacadas">
+                        <div id="barra-progreso1">
+                        </div>
+                        <span>HTML5</span>
+                    </li>
+                    <li class="habilidades-destacadas">
+                        <div id="barra-progreso2">
+                        </div>
+                        <span>CSS3</span>
+                    </li>
+                    <li class="habilidades-destacadas">
+                        <div id="barra-progreso3">
+                        </div>
+                        <span>JavaScript</span>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="habilidades-destacadas">
+                        <div id="barra-progreso4">
+                        </div>
+                        <span>GitHub</span>
+                    </li>
+                    <li class="habilidades-destacadas">
+                        <div id="barra-progreso5">
+                        </div>
+                        <span>Bootstrap</span>
+                    </li>
+                    <li class="habilidades-destacadas">
+                        <div id="barra-progreso6">
+                        </div>
+                        <span>Git Bash</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </article>
     <footer>
-        <h2>Footer</h2>
+        <h6>Creado por:</h6>
+        <h6>Leandro Contreras</h6>
+        <h6>leandro_cont_95@hotmail.com</h6>
     </footer>
 
-
+    <script src=".JS/function.js"></script>
 
 </body>
 </html>
